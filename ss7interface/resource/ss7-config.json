@@ -1,0 +1,18 @@
+{
+    "SS7_DISRUPTOR_SERVER_NAME"         : "telecelvas",
+    "SS7_DISRUPTOR_IP_ADDRESS"          : "127.0.0.1",
+    "SS7_DISRUPTOR_PORT"                : "3434",
+    "SS7_DISRUPTOR_ASSOCIATION_NAME"    : "serverAssociation",
+
+    "SS7_MSC_IP_ADDRESS"                : "127.0.0.1",
+    "SS7_MSC_PORT"                      : "2345",
+    "SS7_MSC_ASSOCIATION_NAME"          : "clientAssociation",
+
+    "ROUTING_CONTEXT"                   : "100",
+    "SS7_DISRUPTOR_SPC"                 : "2",
+    "SS7_MSC_SPC"                       : "1",
+    "NETWORK_INDICATOR"                 : "2",
+    "SERVICE_INDICATOR"                 : "3",
+    "SSN"                               : "8"
+}
+

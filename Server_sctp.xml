@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<servers>
+	<server value="Server [name=eBridgeUSSDGw, started=false, hostAddress=192.1.1.29, hostPort=9200, ipChannelType=SCTP, acceptAnonymousConnections=false, maxConcurrentConnectionsCount=0, associations(anonymous does not included)=[eBridgeUSSDGw, ], extraHostAddress=[]]"/>
+</servers>
+<associations>
+	<name value="eBridgeUSSDGw"/>
+	<association value="Association [name=eBridgeUSSDGw, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=10.10.25.140, peerPort=33910, serverName=eBridgeUSSDGw, extraHostAddress=[]]"/>
+</associations>

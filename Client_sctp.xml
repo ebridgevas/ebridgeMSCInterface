@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<servers/>
+<associations>
+	<name value="clientAssociation"/>
+	<association value="Association [name=clientAssociation, associationType=CLIENT, ipChannelType=SCTP, hostAddress=127.0.0.1, hostPort=2345, peerAddress=127.0.0.1, peerPort=3434, serverName=null, extraHostAddress=[]]"/>
+</associations>

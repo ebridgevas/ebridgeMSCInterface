@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://code.google.com/p/jss7/wiki/StartSS7asStandalone -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="http://code.google.com/p/jss7/wiki/StartSS7asStandalone">
+ 
+ <script src="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/plusone.js" gapi_processed="true"></script><script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = "QvDp4mR8tlSxs-bCF06CkqpJoec:1395391567749";
+ 
+ 
+ var CS_env = {"profileUrl": "/u/116912044148502890522/", "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/11512667522589661435", "token": "QvDp4mR8tlSxs-bCF06CkqpJoec:1395391567749", "projectHomeUrl": "/p/jss7", "relativeBaseUrl": "", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "domainName": null, "projectName": "jss7", "loggedInUserEmail": "telecelvas@gmail.com"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-26513010-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script><script type="text/javascript" async="" src="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/ga.js"></script>
+ 
+ 
+ <title>StartSS7asStandalone - 
+ jss7 -
+ 
+ Start jSS7 as standalone - 
+ Mobicents Java SS7 Stack and Services - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/ph_detail.css">
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="https://code.google.com/feeds/p/jss7/gitchanges/basic?path=/StartSS7asStandalone.wiki&repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/11512667522589661435/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ 
+ <a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#" id="multilogin-dropdown" onclick="return false;"><u><b>telecelvas@gmail.com</b></u> <small>▼</small></a>
+ 
+ 
+ | <a href="https://code.google.com/u/116912044148502890522/" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>▼</small></a>
+ | <a href="https://code.google.com/u/116912044148502890522/" onclick="_CS_click(&#39;/gb/ph/profile&#39;);" title="Profile, Updates, and Settings"><u>Profile</u></a>
+ | <a href="https://www.google.com/accounts/Logout?continue=https%3A%2F%2Fcode.google.com%2Fp%2Fjss7%2Fwiki%2FStartSS7asStandalone" onclick="_CS_click(&#39;/gb/ph/signout&#39;);"><u>Sign out</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0" itemscope="" itemtype="http://schema.org/CreativeWork">
+ <tbody><tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="https://code.google.com/p/jss7">
+ <a href="https://code.google.com/p/jss7/">
+ 
+ 
+ <img src="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/logo" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="https://code.google.com/p/jss7/"><span itemprop="name">jss7</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link" href="https://code.google.com/p/jss7/"><span itemprop="description">Mobicents Java SS7 Stack and Services</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="https://code.google.com/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects">
+ </form>
+ 
+ </td></tr>
+ </tbody></table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="https://code.google.com/p/jss7/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/jss7/wiki/Welcome?tm=6" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/jss7/issues/list" class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/p/jss7/source/checkout" class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="gtbc"></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tbody><tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="https://code.google.com/p/jss7/w/list" method="GET" style="display:inline">
+ <select id="can" name="can">
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1">&nbsp;All wiki pages</option>
+ <option value="3">&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="5">&nbsp;My starred pages</option>
+ 
+ <option value="4">&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value="" autocomplete="off"></span>
+ 
+ 
+ 
+ <input type="submit" value="Search">
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</tbody></table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol" style="padding:0 3px 3px 0; margin:0">
+
+ 
+
+
+
+
+
+
+ 
+<style type="text/css">
+ #wikimaincol { padding-top: 6px; padding-left:1em}
+ #sidebarcontainer {
+ padding: 1.5em 2px 2px 2px;
+ min-width: 15em;
+ max-width: 20em;
+ overflow:hidden;
+}
+ .sidebartop ul { margin:0 0 0 .5em; padding-left:0 !important; list-style:none}
+ .sidebartop ul ul { margin-left:1em; padding-left:0; list-style:none; display:none}
+ .sidebartop li { margin:0 0 2px 0; padding:1px; padding-left:14px; cursor:pointer}
+ .sidebartop li a { padding:2px}
+ .sidebartop li { background: url(https://ssl.gstatic.com/codesite/ph/images/plus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeopen { background: url(https://ssl.gstatic.com/codesite/ph/images/minus.gif) no-repeat 1px 3px}
+ .sidebartop li.treeleaf { background:none}
+ .currentpagelink { 
+ font-weight: bold;
+ text-decoration: none;
+ color: black !important; 
+ background: #c3d9ff;
+ }
+ .sidebartop ul.treeleafcontainer { display:block;}
+ .sidebarcontent { 
+ vertical-align:top;
+ padding-right: 3px;
+ border-right: 2px solid #ccc;
+ }
+</style>
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tbody><tr>
+ 
+ 
+ <td class="sidebarcontent">
+ <div class="vt expand" id="wikisidebar">
+ <div>
+ 
+ <div style="float:right;">
+ <a class="ifExpand" style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#" onclick="_DW_toggleSidebar(this); return false;" title="Hide sidebar"><b>‹‹</b></a>
+ </div>
+ <div class="ifCollapse" style="padding:0 2px">
+ <a style="font-size:130%; color:blue; text-decoration:none" href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#" onclick="_DW_toggleSidebar(this); return false;" title="Show sidebar"><b>››</b></a>
+ </div>
+ 
+ 
+ <div id="sidebarcontainer" class="sidebartop ifExpand">
+ <ul class="treeleafcontainer"><li><a href="https://code.google.com/p/jss7/wiki/Welcome">Overview</a> </li><ul><li class="treeleaf"><a href="https://code.google.com/p/jss7/wiki/Welcome">Welcome</a> </li><li class="treeleaf"><a href="https://code.google.com/p/jss7/wiki/Downloads">Downloads</a> </li><li class="treeleaf"><a href="http://code.google.com/p/jss7/issues/list?can=1&q=Roadmap%3DDate+OR+Roadmap%3DIssue+OR+Roadmap%3DFix&sort=priority+version&groupby=version&colspec=Summary+Type+Status+ID&cells=tiles" rel="nofollow">Roadmap</a> </li></ul><li class="treeopen">Wiki </li><ul class="treeleafcontainer"><li class="treeleaf"><a href="https://code.google.com/p/jss7/wiki/SCTPError">UnsupportedOperationException on starting M3UA</a>  </li><li class="treeleaf"><a href="https://code.google.com/p/jss7/wiki/USSDTestingwithDialogicBoards">USSD (MAP) Testing with Dialogic boards</a>   </li><li class="treeleaf"><a href="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting.html" class="currentpagelink">Start jSS7 as standalone</a>  	 </li></ul><li class="treeleaf"><a href="https://code.google.com/p/jss7/wiki/Contribute">How to Contribute</a> </li><li class="treeleaf"><a href="https://code.google.com/p/jss7/wiki/SS7Introduction">SS7 Introduction</a> </li></ul>
+ </div>
+ </div>
+</div>
+
+ </td>
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <img width="15" height="15" id="star_img" src="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/star_off.gif" style="cursor:pointer" onclick="_CS_toggleStar(this,
+ {&#39;scope&#39;: &#39;wiki&#39;,
+ &#39;user&#39;: &#39;_CURRENT_USER&#39;,
+ &#39;item&#39;: &#39;jss7:StartSS7asStandalone&#39;
+ });">
+ 
+ <span style="font-size:120%;font-weight:bold">StartSS7asStandalone</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Start jSS7 as standalone</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Sun Jun 17 02:02:01 2012">
+ Jun 17, 2012</span>
+ 
+ by 
+
+ <a class="userlink" href="https://code.google.com/u/117880252266869322723/">amit.bha...@gmail.com</a>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p>Below wiki explains how Mobicents jSS7 can be started as standalone Java Project without any dependency on JBoss, Mobicents JSLEE or any other container. It also gives some details of how jSS7 layers can be configured. </p><h1><a name="Setting_up_the_project"></a>Setting up the project<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Setting_up_the_project" class="section_anchor"></a></h1><p>Instead of the sophisticated application, you’ll get started with a “Hello World” example. That way, you can focus on the development process without getting distracted by jSS7 details. The example is based on Apache Maven  and should be installed on your development machine.   Let’s set up the project directory first. </p><h2><a name="Creating_the_work_directory"></a>Creating the work directory<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Creating_the_work_directory" class="section_anchor"></a></h2><p>Create a new directory on your system, in any location you like; <tt>\home\&lt;user&gt;\jss7example</tt> is a good choice if you work on linux where <tt>&lt;user&gt;</tt> is the user-name. We’ll refer to this directory as WORKDIR in future examples.  Create src/main/java subdirectories (following maven jar directory structure) </p><pre class="prettyprint"><span class="pln">WORKDIR<br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">+</span><span class="pln">src<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pun">+</span><span class="pln">main<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">+</span><span class="pln">java</span></pre><p>Note : Its assumed that you have basic understanding of Apache Maven </p><p>In the “Hello World” application, we will send USSD messages and listen for incoming USSD messages. </p><h2><a name="Creating_the_Application"></a>Creating the Application<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Creating_the_Application" class="section_anchor"></a></h2><p>The Client acts as Mobile Handset sending the short code to Server acting as USSD Gateway Server. Client and Server are simple Java program with <tt>public static void main(String args[])</tt> method to fire up the program.  Application using jSS7 stack should setup SS7 layers from lowest one SCTP to the top MAP   </p><h3><a name="Building_SCTP"></a>Building SCTP<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Building_SCTP" class="section_anchor"></a></h3><p>This is an example of a typical SCTP startup procedure, in one line of code, using automatic configuration file detection: </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; org</span><span class="pun">.</span><span class="pln">mobicents</span><span class="pun">.</span><span class="pln">protocols</span><span class="pun">.</span><span class="pln">api</span><span class="pun">.</span><span class="typ">Management</span><span class="pln"> sctpManagement </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; sctpManagement </span><span class="pun">=</span><span class="pln"> org</span><span class="pun">.</span><span class="pln">mobicents</span><span class="pun">.</span><span class="pln">protocols</span><span class="pun">.</span><span class="pln">sctp</span><span class="pun">.</span><span class="typ">ManagementImpl</span><span class="pun">(</span><span class="str">"Client"</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sctpManagement</span><span class="pun">.</span><span class="pln">setSingleThread</span><span class="pun">(</span><span class="kwd">true</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sctpManagement</span><span class="pun">.</span><span class="pln">setConnectDelay</span><span class="pun">(</span><span class="lit">10000</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sctpManagement</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span></pre><p>Wait-how did jSS7 know where the configuration file was located and which one to load? </p><p>When <tt>this.sctpManagement.start();</tt> is called, jSS7 searches for a file named <tt>Client_sctp.xml</tt> in the directory path set by user by calling <tt>this.sctpManagement.setPersistDir("&lt;your directory path&gt;")</tt>.  For example in case of linux you can pass something like <tt>this.sctpManagement.setPersistDir("/home/abhayani/workarea/mobicents/git/jss7/master/map/load/client")</tt> </p><p>If directory path is not set, Management searches for system property <tt>sctp.persist.dir</tt> to get the path for directory. </p><p>Even if <tt>sctp.persist.dir</tt> system property is not set, Management will look at System set property <tt>user.dir</tt> </p><p>Once you know SCTP layer is configured and started, next step is add the <tt>Association</tt> and/or <tt>Server</tt> depending on whether this setup will be acting as client or server or both. </p><ul><li>For client side : <tt>sctpManagement.addAssociation(CLIENT_IP, CLIENT_PORT, SERVER_IP, SERVER_PORT, CLIENT_ASSOCIATION_NAME, ipChannelType, null);</tt> </li><li>For server side : <tt>sctpManagement.addServerAssociation(CLIENT_IP, CLIENT_PORT, SERVER_NAME, SERVER_ASSOCIATION_NAME, ipChannelType);</tt> </li></ul><p>Before adding server side association the server should also be defined and started </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; sctpManagement</span><span class="pun">.</span><span class="pln">addServer</span><span class="pun">(</span><span class="pln">SERVER_NAME</span><span class="pun">,</span><span class="pln"> SERVER_IP</span><span class="pun">,</span><span class="pln"> SERVER_PORT</span><span class="pun">,</span><span class="pln"> ipChannelType</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; sctpManagement</span><span class="pun">.</span><span class="pln">addServerAssociation</span><span class="pun">(</span><span class="pln">CLIENT_IP</span><span class="pun">,</span><span class="pln"> CLIENT_PORT</span><span class="pun">,</span><span class="pln"> SERVER_NAME</span><span class="pun">,</span><span class="pln"> SERVER_ASSOCIATION_NAME</span><span class="pun">,</span><span class="pln"> ipChannelType</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; sctpManagement</span><span class="pun">.</span><span class="pln">startServer</span><span class="pun">(</span><span class="pln">SERVER_NAME</span><span class="pun">);</span></pre><p>Note : You should never start the <tt>Association</tt> programatically. <tt>Association</tt> will be started automatically when layer above it M3UA's <tt>Asp</tt> is started. </p><p>This completes the SCTP configuration and start-up </p><h3><a name="Building_M3UA"></a>Building M3UA<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Building_M3UA" class="section_anchor"></a></h3><p>Configuring the M3UA layer follows the same steps as SCTP above.  </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; org</span><span class="pun">.</span><span class="pln">mobicents</span><span class="pun">.</span><span class="pln">protocols</span><span class="pun">.</span><span class="pln">ss7</span><span class="pun">.</span><span class="pln">m3ua</span><span class="pun">.</span><span class="pln">impl clientM3UAMgmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">clientM3UAMgmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> M3UAManagement</span><span class="pun">(</span><span class="str">"Client"</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">clientM3UAMgmt</span><span class="pun">.</span><span class="pln">setTransportManagement</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sctpManagement</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">clientM3UAMgmt</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span></pre><p>For M3UA, it should know which underlying SCTP layer to use <tt>this.clientM3UAMgmt.setTransportManagement(this.sctpManagement);</tt> </p><p>Once M3UA is configured and started, next step is to add the <tt>As</tt>, <tt>Asp</tt> and routing rules for M3UA. These depends on whether stack acts as Application Server side or Signaling Gateway side or just peer-to-peer (IPSP) client/server side. </p><p>Below is example of IPSP peer acting as client </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">RoutingContext</span><span class="pln"> rc </span><span class="pun">=</span><span class="pln"> factory</span><span class="pun">.</span><span class="pln">createRoutingContext</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="kwd">long</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="lit">100l</span><span class="pln"> </span><span class="pun">});</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">TrafficModeType</span><span class="pln"> trafficModeType </span><span class="pun">=</span><span class="pln"> factory</span><span class="pun">.</span><span class="pln">createTrafficModeType</span><span class="pun">(</span><span class="typ">TrafficModeType</span><span class="pun">.</span><span class="typ">Loadshare</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">clientM3UAMgmt</span><span class="pun">.</span><span class="pln">createAs</span><span class="pun">(</span><span class="str">"AS1"</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Functionality</span><span class="pun">.</span><span class="pln">AS</span><span class="pun">,</span><span class="pln"> </span><span class="typ">ExchangeType</span><span class="pun">.</span><span class="pln">SE</span><span class="pun">,</span><span class="pln"> </span><span class="typ">IPSPType</span><span class="pun">.</span><span class="pln">CLIENT</span><span class="pun">,</span><span class="pln"> rc</span><span class="pun">,</span><span class="pln"> trafficModeType</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// Step 2 : Create ASP</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">clientM3UAMgmt</span><span class="pun">.</span><span class="pln">createAspFactory</span><span class="pun">(</span><span class="str">"ASP1"</span><span class="pun">,</span><span class="pln"> CLIENT_ASSOCIATION_NAME</span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// Step3 : Assign ASP to AS</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">Asp</span><span class="pln"> asp </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">clientM3UAMgmt</span><span class="pun">.</span><span class="pln">assignAspToAs</span><span class="pun">(</span><span class="str">"AS1"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"ASP1"</span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// Step 4: Add Route. Remote point code is 2</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; clientM3UAMgmt</span><span class="pun">.</span><span class="pln">addRoute</span><span class="pun">(</span><span class="pln">SERVET_SPC</span><span class="pun">,</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">"AS1"</span><span class="pun">);</span></pre><p>This completes the M3UA configuration and start-up. Once M3UA is configured depending on whether you are trying to build voice application that depends on ISUP or advanced network features such as those offered by supplementary services that depends on MAP, you would configure ISUP or SCCP </p><h3><a name="Building_SCCP"></a>Building SCCP<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Building_SCCP" class="section_anchor"></a></h3><p>Configuring the SCCP layer follows exactly same architecture of persisting configuration in xml file. </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; org</span><span class="pun">.</span><span class="pln">mobicents</span><span class="pun">.</span><span class="pln">protocols</span><span class="pun">.</span><span class="pln">ss7</span><span class="pun">.</span><span class="pln">sccp</span><span class="pun">.</span><span class="typ">SccpStack</span><span class="pln"> sccpStack </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sccpStack </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SccpStackImpl</span><span class="pun">(</span><span class="str">"MapLoadClientSccpStack"</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sccpStack</span><span class="pun">.</span><span class="pln">setMtp3UserPart</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">clientM3UAMgmt</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sccpStack</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span></pre><p>Before starting SCCP stack all it needs to know is underlying MTP3 layer. Above sections explained building SCTP and M3UA, however if you are using Dialogic boards or dahdi based boards (Diguim/Sangoma), you need to build and configure respective MTP3 layers depending on hardware used and set those in SCCP Stack <tt>this.sccpStack.setMtp3UserPart(1, this.clientM3UAMgmt);</tt>.  </p><p>One of the best features of jSS7 is it supports multiple MTP3 layers and hence you can have combination of many MTP3 layers (each of different or same type like M3UA, Dialogic and Dahid; all used at same time )   </p><p>Once SCCP stack is started, it should be configured for local and remote signaling point-code, network indicator, remote sub system number and routing rules. </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">RemoteSignalingPointCode</span><span class="pln"> rspc </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RemoteSignalingPointCode</span><span class="pun">(</span><span class="pln">SERVET_SPC</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">RemoteSubSystem</span><span class="pln"> rss </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RemoteSubSystem</span><span class="pun">(</span><span class="pln">SERVET_SPC</span><span class="pun">,</span><span class="pln"> SSN</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sccpStack</span><span class="pun">.</span><span class="pln">getSccpResource</span><span class="pun">().</span><span class="pln">addRemoteSpc</span><span class="pun">(</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> rspc</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sccpStack</span><span class="pun">.</span><span class="pln">getSccpResource</span><span class="pun">().</span><span class="pln">addRemoteSsn</span><span class="pun">(</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> rss</span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">Mtp3ServiceAccessPoint</span><span class="pln"> sap </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Mtp3ServiceAccessPoint</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> CLIENT_SPC</span><span class="pun">,</span><span class="pln"> NETWORK_INDICATOR</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">Mtp3Destination</span><span class="pln"> dest </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Mtp3Destination</span><span class="pun">(</span><span class="pln">SERVET_SPC</span><span class="pun">,</span><span class="pln"> SERVET_SPC</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">255</span><span class="pun">,</span><span class="pln"> </span><span class="lit">255</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sccpStack</span><span class="pun">.</span><span class="pln">getRouter</span><span class="pun">().</span><span class="pln">addMtp3ServiceAccessPoint</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> sap</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sccpStack</span><span class="pun">.</span><span class="pln">getRouter</span><span class="pun">().</span><span class="pln">addMtp3Destination</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> dest</span><span class="pun">);</span></pre><p>Once SCCP is configured and started, next step it to build TCAP layer </p><h3><a name="Building_TCAP"></a>Building TCAP<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Building_TCAP" class="section_anchor"></a></h3><p>There is no configuration to persist in case of TCAP. </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; org</span><span class="pun">.</span><span class="pln">mobicents</span><span class="pun">.</span><span class="pln">protocols</span><span class="pun">.</span><span class="pln">ss7</span><span class="pun">.</span><span class="pln">tcap</span><span class="pun">.</span><span class="pln">api tcapStack </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">tcapStack </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">TCAPStackImpl</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sccpStack</span><span class="pun">.</span><span class="pln">getSccpProvider</span><span class="pun">(),</span><span class="pln"> SSN</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">tcapStack</span><span class="pun">.</span><span class="pln">setDialogIdleTimeout</span><span class="pun">(</span><span class="lit">60000</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">tcapStack</span><span class="pun">.</span><span class="pln">setInvokeTimeout</span><span class="pun">(</span><span class="lit">30000</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">tcapStack</span><span class="pun">.</span><span class="pln">setMaxDialogs</span><span class="pun">(</span><span class="lit">2000</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">tcapStack</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span></pre><p>Configuring TCAP is probably very simple as config reamins same irrespective of whether its used on client side or server side.  </p><h3><a name="Building_MAP"></a>Building MAP<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Building_MAP" class="section_anchor"></a></h3><p>There is no configuration to persist in case of MAP; however MAP stack can take <tt>TCAPProvider</tt> from <tt>TCAPStack</tt> which is already configured for specific SSN as shown below </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">mapStack </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">MAPStackImpl</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">tcapStack</span><span class="pun">.</span><span class="pln">getProvider</span><span class="pun">());</span></pre><p>Or it can also directly take <tt>SccpProvider</tt> and pass SSN to MAP Stack as shown below. In this case <tt>MAPStack</tt> itself creates the <tt>TCAPStack</tt> and leverages <tt>TCAPProvider</tt>  </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">mapStack </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">MAPStackImpl</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">sccpStack</span><span class="pun">.</span><span class="pln">getSccpProvider</span><span class="pun">(),</span><span class="pln"> SSN</span><span class="pun">);</span></pre><p>Before <tt>MAPStack</tt> can be started, the Application interested in particualr MAP Service should register it-self as listener and activate that service </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">mapProvider </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">mapStack</span><span class="pun">.</span><span class="pln">getMAPProvider</span><span class="pun">();</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">mapProvider</span><span class="pun">.</span><span class="pln">addMAPDialogListener</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">mapProvider</span><span class="pun">.</span><span class="pln">getMAPServiceSupplementary</span><span class="pun">().</span><span class="pln">addMAPServiceListener</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">mapProvider</span><span class="pun">.</span><span class="pln">getMAPServiceSupplementary</span><span class="pun">().</span><span class="pln">acivate</span><span class="pun">();</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">mapStack</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span></pre><p>Below is how the Application code looks like  </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Client</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">MAPDialogListener</span><span class="pun">,</span><span class="pln"> </span><span class="typ">MAPServiceSupplementaryListener</span><span class="pln"> &nbsp;</span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">//Implemet all MAPDialogListener methods here</span><span class="pln"><br><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">//Implement all MAPServiceSupplementaryListener methods here</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">}</span></pre><h3><a name="Common_code"></a>Common code<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Common_code" class="section_anchor"></a></h3><p>All above snippet of code refers to below defined constants </p><pre class="prettyprint"><span class="pln">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="com">// MTP Details</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> CLIENT_SPC </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> SERVET_SPC </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> NETWORK_INDICATOR </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> SERVICE_INIDCATOR </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span><span class="pln"> </span><span class="com">//SCCP</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> SSN </span><span class="pun">=</span><span class="pln"> </span><span class="lit">8</span><span class="pun">;</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> CLIENT_IP </span><span class="pun">=</span><span class="pln"> </span><span class="str">"127.0.0.1"</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> CLIENT_PORT </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2345</span><span class="pun">;</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> SERVER_IP </span><span class="pun">=</span><span class="pln"> </span><span class="str">"127.0.0.1"</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> SERVER_PORT </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3434</span><span class="pun">;</span><span class="pln"><br><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> ROUTING_CONTEXT </span><span class="pun">=</span><span class="pln"> </span><span class="lit">100</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> SERVER_ASSOCIATION_NAME </span><span class="pun">=</span><span class="pln"> </span><span class="str">"serverAsscoiation"</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> CLIENT_ASSOCIATION_NAME </span><span class="pun">=</span><span class="pln"> </span><span class="str">"clientAsscoiation"</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; <br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> SERVER_NAME </span><span class="pun">=</span><span class="pln"> </span><span class="str">"testserver"</span><span class="pun">;</span><span class="pln"><br><br></span><span class="pun">.....</span><span class="pln"><br></span><span class="pun">.....</span></pre><p>You can directly download the example from <a href="http://code.google.com/p/jss7/source/browse?repo=examples#git%2Fussd" rel="nofollow">here</a> </p><p>Note : You need to have GIT installed on your development machine to clone code </p><h1><a name="Running_and_testing_the_application"></a>Running and testing the application<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Running_and_testing_the_application" class="section_anchor"></a></h1><p>To run the application, you need to compile it first.  </p><p>Maven is a powerful build system for Java. </p><h2><a name="Compiling_the_project_with_maven"></a>Compiling the project with maven<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Compiling_the_project_with_maven" class="section_anchor"></a></h2><p>You'll now add a pom.xml file as shown below </p><pre class="prettyprint"><span class="pln">WORKDIR<br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">+</span><span class="pln">src<br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pun">+</span><span class="pln">pom</span><span class="pun">.</span><span class="pln">xml</span></pre><p>The content of this file is shown <a href="http://code.google.com/p/jss7/source/browse/ussd/pom.xml?repo=examples" rel="nofollow">here</a> </p><p>The libraries defined in <tt>&lt;dependencies&gt;</tt> are required for a typical SS7 project. Keep in mind that some of the libraries you’re seeing here may not be required for the  particular version of jSS7 you’re working with, which is likely a newer release than we used when writing this wiki. To make sure you have the right set of libraries, always check the  <tt>mobicents-ss7-X.Y.Z/ss7/mobicents-ss7-service/lib/</tt> in the jSS7 distribution package. This directory contains an up-to-date list of all required and optional libraries for jSS7. <tt>X.Y.Z</tt> is the binary version of  jSS7 distribution. Depending on which version of jSS7 you work with, the version of libraries also changes. </p><p>Call <tt>mvn clean install</tt> from WORKDIR to compile the project. For first time, it will download all the dependencies from repository. Make sure you have access to internet at-least for first time. </p><h3><a name="Start_Server"></a>Start Server<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Start_Server" class="section_anchor"></a></h3><p>Call <tt>mvn test -Pserver</tt> to start the server. If everything is right you should see below message without any exceptions shown on console  </p><pre class="prettyprint"><span class="pln">DEBUG org</span><span class="pun">.</span><span class="pln">mobicents</span><span class="pun">.</span><span class="pln">jss7</span><span class="pun">.</span><span class="pln">standalone</span><span class="pun">.</span><span class="pln">example</span><span class="pun">.</span><span class="pln">ussd</span><span class="pun">.</span><span class="typ">SctpServer</span><span class="pln"> &nbsp;</span><span class="pun">-</span><span class="pln"> </span><span class="pun">[[[[[[[[[[</span><span class="pln"> &nbsp; &nbsp;</span><span class="typ">Started</span><span class="pln"> </span><span class="typ">SctpServer</span><span class="pln"> &nbsp; &nbsp; &nbsp; </span><span class="pun">]]]]]]]]]]</span></pre><p>Observer the configuration files <tt>Server_sctp.xml</tt>, <tt>Server_m3ua.xml</tt>, <tt>MapLoadServerSccpStack_sccprouter.xml</tt>, <tt>MapLoadServerSccpStack_sccpresource.xml</tt> created in WORKDIR </p><h3><a name="Start_Client"></a>Start Client<a href="https://code.google.com/p/jss7/wiki/StartSS7asStandalone#Start_Client" class="section_anchor"></a></h3><p>Call <tt>mvn test -Pclient</tt> to start the client. If everything is right you should see USSD messages getting exchanged. </p><p>Its best to start the wireshark and capture the packets to analyze how SCTP, M3UA and MAP messages are getting exchanged. </p>
+ </div>
+ </div>
+ </td></tr><tr>
+</tr></tbody></table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/117456364849083073582/">imranraz...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Jun 18 01:41:06 2012">Jun 18, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi, </p><p>Very nice wiki, it will surely help community to understand things easily. </p><p>Regards, </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/117456364849083073582/">imranraz...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Tue Jun 19 00:01:46 2012">Jun 19, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi, </p><p>I want to know can we use server code to connect with telco network and receive USSD mesages? </p><p>Regards, imran </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/105047714297897704199/">sri.nara...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Jan 18 16:58:25 2014">Jan 18, 2014</span>
+ <div>
+<div class="commentcontent">
+<p>Hi Amit, Executing the client , I get error message ,no remote ssn defined - 8  </p><p>// RemoteSignalingPointCode<a href="https://code.google.com/p/jss7/w/edit/RemoteSignalingPointCode">?</a> rspc = new </p><blockquote>// RemoteSignalingPointCode<a href="https://code.google.com/p/jss7/w/edit/RemoteSignalingPointCode">?</a>(SERVET_SPC, 0, 0); 
+<blockquote>RemoteSubSystem<a href="https://code.google.com/p/jss7/w/edit/RemoteSubSystem">?</a> rss = new RemoteSubSystemImpl<a href="https://code.google.com/p/jss7/w/edit/RemoteSubSystemImpl">?</a>(SERVET_SPC, SSN, 0, false); 
+</blockquote></blockquote>		  <blockquote>this.sccpStack.getSccpResource().addRemoteSpc(0, SERVET_SPC, 0, 0); 
+this.sccpStack.getSccpResource().addRemoteSsn(SERVET_SPC, SSN, 0, 0, 
+<blockquote>false); 
+</blockquote></blockquote><p></p><p>And more over , compilation errors where solved since the addRemoteSSn method signature has been changed/is refering to prev sugnature .. 20712 [org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.main()] INFO  org.m obicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>  - &gt;&gt; initiateUSSD 20823 [org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.main()] INFO  org.m obicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>  - init sent&gt;&gt;&gt; 20852 [org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.main()] WARN  org.m obicents.protocols.ss7.sccp.impl.SccpRoutingControl<a href="https://code.google.com/p/jss7/w/edit/SccpRoutingControl">?</a>  - Received SCCPMessage=Sccp </p><blockquote>Msg [Type= sls=1 incomingOpc=-1 incomingDpc=-1 outgoingDpc=-1 CallingAddress<a href="https://code.google.com/p/jss7/w/edit/CallingAddress">?</a>(pc 
+</blockquote>=1,ssn=8,AI=67,gt=null) CalledParty<a href="https://code.google.com/p/jss7/w/edit/CalledParty">?</a>(pc=2,ssn=8,AI=67,gt=null) DataLen<a href="https://code.google.com/p/jss7/w/edit/DataLen">?</a>=135] for r outing, but no Remote SubSystem<a href="https://code.google.com/p/jss7/w/edit/SubSystem">?</a> = 8 resource defined 80839 [pool-6-thread-1] ERROR org.mobicents.jss7.standalone.example.ussd.SctpCli<a href="https://code.google.com/p/jss7/w/edit/SctpCli">?</a> ent  - onDialogTimeout for DialogId<a href="https://code.google.com/p/jss7/w/edit/DialogId">?</a>=1 80841 [pool-6-thread-1] DEBUG org.mobicents.jss7.standalone.example.ussd.SctpCli<a href="https://code.google.com/p/jss7/w/edit/SctpCli">?</a> ent  - onDialogResease for DialogId<a href="https://code.google.com/p/jss7/w/edit/DialogId">?</a>=1 <p></p><p>Please let me know if the remote ssn not found error could be related to the api issue. May be the project refers to older versions of the code. </p><p>Regards, Sri </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/105047714297897704199/">sri.nara...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Jan 18 18:21:57 2014">Jan 18, 2014</span>
+ <div>
+<div class="commentcontent">
+<p>Hello , </p><p>&lt;?xml version="1.0" encoding="UTF-8" ?&gt; &lt;remoteSsns&gt; </p><blockquote>&lt;id value="2"/&gt; 
+&lt;value remoteSpc="8" remoteSsn="0" remoteSsnFlag="0" markProhibitedWhenSpcResuming="false"/&gt; 
+</blockquote>&lt;/remoteSsns&gt; &lt;remoteSpcs&gt; <blockquote>&lt;id value="0"/&gt; 
+&lt;value remoteSpc="2" remoteSpcFlag="0" mask="0"/&gt; 
+</blockquote>&lt;/remoteSpcs&gt; &lt;concernedSpcs/&gt; <p></p><p>Is this config fine <a href="">&lt;value remoteSpc="8" remoteSsn="0" remoteSsnFlag="0" markProhibitedWhenSpcResuming="false"/&gt;</a> remote ssn should be 8 , something missing n the code ?  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/105047714297897704199/">sri.nara...@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Sat Jan 18 18:53:21 2014">Jan 18, 2014</span>
+ <div>
+<div class="commentcontent">
+<p>Solved! , it was a config issue .  </p><p>[2014-01-19 08:11:49,726] INFO 20749[org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.main()] - org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.initiateUSSD(SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.java:228) - &gt;&gt; initiateUSSD [2014-01-19 08:11:49,824] INFO 20847[org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.main()] - org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.initiateUSSD(SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.java:265) - init sent&gt;&gt;&gt; [2014-01-19 08:11:50,362]DEBUG 21385[pool-1-thread-1] - org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.onDialogAccept(SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.java:280) - onDialogAccept for DialogId<a href="https://code.google.com/p/jss7/w/edit/DialogId">?</a>=1 MAPExtensionContainer=null [2014-01-19 08:11:50,377]DEBUG 21400[pool-1-thread-1] - org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.onUnstructuredSSRequest(SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.java:540) - Rx UnstructuredSSRequestIndication. USSD String=USSDString String : Hello World &lt;CR&gt; 1. Balance &lt;CR&gt; 2. Texts Remaining, dcs=CBSDataCodingScheme [Code=15, CBSDataCodingGroup=GeneralGsm7, NationalLanguageShiftTable=LanguageUnspecified, CharacterSet=GSM7<a href="https://code.google.com/p/jss7/w/edit/USSD">?</a>]  [2014-01-19 08:11:50,384]DEBUG 21407[pool-1-thread-1] - org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.onDialogDelimiter(SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.java:310) - onDialogDelimiter for DialogId<a href="https://code.google.com/p/jss7/w/edit/DialogId">?</a>=1 [2014-01-19 08:11:50,430]DEBUG 21453[pool-1-thread-1] - org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.onProcessUnstructuredSSResponse(SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.java:487) - Rx ProcessUnstructuredSSResponseIndication.  USSD String=USSDString balance is 500, dcs=CBSDataCodingScheme [Code=15, CBSDataCodingGroup=GeneralGsm7, NationalLanguageShiftTable=LanguageUnspecified, CharacterSet=GSM7<a href="https://code.google.com/p/jss7/w/edit/Your">?</a>] [2014-01-19 08:11:50,432]DEBUG 21455[pool-1-thread-1] - org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.onDialogClose(SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.java:295) - DialogClose<a href="https://code.google.com/p/jss7/w/edit/DialogClose">?</a> for Dialog=1 [2014-01-19 08:11:50,433]DEBUG 21456[pool-1-thread-1] - org.mobicents.jss7.standalone.example.ussd.SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.onDialogRelease(SctpClient<a href="https://code.google.com/p/jss7/w/edit/SctpClient">?</a>.java:379) - onDialogResease for DialogId<a href="https://code.google.com/p/jss7/w/edit/DialogId">?</a>=1 </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/109029007688796462919/">asbjorn....@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Mar 10 09:46:11 2014">Mar 10, 2014</span>
+ <div>
+<div class="commentcontent">
+<p>What needs to be changed in these examples, to make the code run on the latest ss7 version (2.1.0) Try as I might, and I have, I can't locate a compiled set of jar libraries for 2.0.0. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment">
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink" href="https://code.google.com/u/109029007688796462919/">asbjorn....@gmail.com</a>,
+ 
+ </span>
+ <span class="date" title="Mon Mar 17 09:40:38 2014">Mar 17 (3 days ago)</span>
+ <div>
+<div class="commentcontent">
+<p>Here's a version of the stand alone examples, updated to jSS7 stack version 2.1.0: <a href="https://dl.dropboxusercontent.com/u/10561661/Mobicents/jSS7StandaloneExample.zip" rel="nofollow">https://dl.dropboxusercontent.com/u/10561661/Mobicents/jSS7StandaloneExample.zip</a> </p><p>I haven't tested them yet, I had a little mishap preventing that today, but it complies (famous last words, I know) </p><p>Cheers A.Grandt </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ 
+ <div id="commentform">
+ <form action="https://code.google.com/p/jss7/w/detail.do" method="post">
+ <table>
+ <tbody><tr><td class="vt">
+ <input type="hidden" name="pagename" value="StartSS7asStandalone">
+ <input type="hidden" name="token" value="QvDp4mR8tlSxs-bCF06CkqpJoec:1395391567749">
+ <div class="graytext" style="float: right;">
+ Hint: You can use <a href="http://code.google.com/p/support/wiki/WikiSyntax">Wiki Syntax.</a>
+ </div>
+ <div>Enter a comment:</div>
+ <textarea name="content" rows="6" cols="100"></textarea><br><br>
+ <input type="submit" name="submit" value="Submit">
+ </td>
+ </tr></tbody></table>
+ </form>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ <form name="delcom" action="https://code.google.com/p/jss7/w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="create_time" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="pagename" value="StartSS7asStandalone">
+ <input type="hidden" name="token" value="QvDp4mR8tlSxs-bCF06CkqpJoec:1395391567749">
+ </form>
+
+
+ <script src="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="./StartSS7asStandalone - jss7 - Start jSS7 as standalone - Mobicents Java SS7 Stack and Services - Google Project Hosting_files/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="https://code.google.com/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="https://code.google.com/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ 
+
+
+
+<div class="menuDiv instance0" id="menuDiv-projects-dropdown" style="display: none;"><div class="menuCategory default"></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="https://code.google.com/hosting/" style="display: block;">Find open source projects...</a><a class="menuItem" href="https://code.google.com/hosting/createProject" style="display: block;">Create a project...</a></div></div><div class="menuDiv instance1" id="menuDiv-multilogin-dropdown" style="display: none;"><div class="menuCategory default"><span class="menuText" style="display: block;"><b>telecelvas@gmail.com</b></span></div><div class="menuCategory controls"><hr class="menuSeparator"><a class="menuItem" href="http://www.google.com/accounts/AddSession?service=code&continue=https%3A%2F%2Fcode.google.com%2Fp%2Fjss7%2Fwiki%2FStartSS7asStandalone" style="display: block;"><nobr>Sign in with another account...</nobr></a></div></div></body></html>

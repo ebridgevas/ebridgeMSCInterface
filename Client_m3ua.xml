@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<aspFactoryList>
+	<aspFactory value="com.ebridgevas.protocols.ss7.m3ua.impl.AspFactoryImpl@167a1116"/>
+</aspFactoryList>
+<asList>
+	<as value="com.ebridgevas.protocols.ss7.m3ua.impl.AsImpl@3af1d485"/>
+</asList>
+<route>
+	<key value="2:-1:-1"/>
+	<value value="AS1"/>
+</route>

@@ -1,0 +1,11 @@
+SccpMessage=
+    Sccp Msg [ Type= sls=11 incomingOpc=1216  incomingDpc=9 outgoingDpc=9
+
+        CallingAddress( pc=1216, ssn=147, AI=82,
+            gt=GT0100 { tt=0, np=ISDN_TELEPHONY, na=INTERNATIONAL, digits=263730100066 } )
+
+        CalledParty( pc=9, ssn=6, AI=18,
+            gt=GT0100 { tt=0, np=ISDN_TELEPHONY, na=INTERNATIONAL, digits=263730100040  } )
+
+        DataLen=206
+    ]

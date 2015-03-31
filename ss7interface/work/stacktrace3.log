@@ -1,0 +1,15 @@
+DEBUG 2015-03-05 14:07:34,749 (com.ebridgevas.protocols.ss7.sccp.impl.SccpStackImpl-MapLoadServerSccpStack:740) - Rx : SCCP message from MTP Sccp Msg [Type=UDT sls=2 incomingOpc=9 incomingDpc=1216 outgoingDpc=-1 CallingAddress(pc=0,ssn=6,AI=18,gt=GT0100{tt=0, np=ISDN_TELEPHONY, na=INTERNATIONAL, digits=263730100040}) CalledParty(pc=0,ssn=147,AI=82,gt=GT0100{tt=0, np=ISDN_TELEPHONY, na=INTERNATIONAL, digits=263730100066}) DataLen=104]
+DEBUG 2015-03-05 14:07:34,752 (com.ebridgevas.protocols.ss7.sccp.impl.SccpRoutingControl:133) - Local deliver : SCCP Data Message=Sccp Msg [Type=UDT sls=2 incomingOpc=9 incomingDpc=1216 outgoingDpc=-1 CallingAddress(pc=0,ssn=6,AI=18,gt=GT0100{tt=0, np=ISDN_TELEPHONY, na=INTERNATIONAL, digits=263730100040}) CalledParty(pc=0,ssn=147,AI=82,gt=GT0100{tt=0, np=ISDN_TELEPHONY, na=INTERNATIONAL, digits=263730100066}) DataLen=104]
+DEBUG 2015-03-05 14:07:34,763 (DialogRequestProcessor.class:21) - onDialogRequest for DialogId=4 DestinationReference=AddressString[AddressNature=international_number, NumberingPlan=land_mobile, Address=648033006503944] OriginReference=AddressString[AddressNature=international_number, NumberingPlan=ISDN, Address=263730100040] MAPExtensionContainer=null
+INFO  2015-03-05 14:07:34,764 (MAPMessageProcessor.class:50) - message type : processUnstructuredSSRequest_Request
+
+INFO  2015-03-05 14:07:34,766 (MAPMessageProcessor.class:57) - Received ProcessUnstructuredSSRequestIndication USSD String=*901#
+
+DEBUG 2015-03-05 14:07:34,770 (com.ebridgevas.protocols.ss7.map.MAPDialogImpl:407) - this.tcapDialog.getPreviewMode() : false
+DEBUG 2015-03-05 14:07:34,771 (com.ebridgevas.protocols.ss7.map.MAPDialogImpl:412) - this.tcapDialog.sendComponent(invoke) : Invoke[invokeId=1, linkedId=null, operationCode=null, parameter=null, invokeClass=Class1, state=Idle, provider : null]
+INFO  2015-03-05 14:07:34,772 (MAPMessageProcessor.class:138) - process()
+DEBUG 2015-03-05 14:07:34,778 (ProcessUnstructuredSSRequestProcessor.class:77) - onProcessUnstructuredSSRequestIndication for DialogId=4. Ussd String=*901#, msisdn=263733803480
+DEBUG 2015-03-05 14:07:34,784 (ProcessUnstructuredSSRequestProcessor.class:61) - ---> { dialog.addUnstructuredSSRequest : { ussdDataCodingScheme : CBSDataCodingScheme [Code=15, CBSDataCodingGroup=GeneralGsm7, NationalLanguageShiftTable=LanguageUnspecified, CharacterSet=GSM7], ussdString : USSDString [Welcome to Telecel USSD <CR> 1. Balance <CR> 2. Buy a bundle, dcs=CBSDataCodingScheme [Code=15, CBSDataCodingGroup=GeneralGsm7, NationalLanguageShiftTable=LanguageUnspecified, CharacterSet=GSM7]], invokeId : 1} }
+DEBUG 2015-03-05 14:07:34,786 (com.ebridgevas.protocols.ss7.map.MAPDialogImpl:407) - this.tcapDialog.getPreviewMode() : false
+DEBUG 2015-03-05 14:07:34,787 (com.ebridgevas.protocols.ss7.map.MAPDialogImpl:412) - this.tcapDialog.sendComponent(invoke) : Invoke[invokeId=1, linkedId=null, operationCode=null, parameter=null, invokeClass=Class1, state=Idle, provider : null]
+DEBUG 2015-03-05 14:07:34,790 (DialogDelimiterProcessor.class:16) - onDialogDelimiter for DialogId=4

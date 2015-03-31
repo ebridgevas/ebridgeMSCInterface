@@ -1,0 +1,48 @@
+
+INFO  2015-03-03 11:44:30,704 (com.ebridgevas.protocols.ss7.sccp.impl.SccpStackImpl-MapLoadServerSccpStack:375) - Starting management ...
+INFO  2015-03-03 11:44:30,704 (com.ebridgevas.protocols.ss7.sccp.impl.SccpStackImpl-MapLoadServerSccpStack:377) - Starting MSU handler...
+INFO  2015-03-03 11:44:30,712 (SCCPFactory.class:90) - SCCP Stack Initialized.
+INFO  2015-03-03 11:44:30,714 (MAPStackFactory.class:37) - Initializing MAP Stack ....
+INFO  2015-03-03 11:44:30,851 (com.ebridgevas.protocols.ss7.tcap.TCAPStackImpl-eBridge MAP Stack:69) - Starting ...com.ebridgevas.protocols.ss7.tcap.TCAPProviderImpl@342c0de
+INFO  2015-03-03 11:44:30,851 (com.ebridgevas.protocols.ss7.tcap.TCAPProviderImpl:477) - Starting TCAP Provider
+INFO  2015-03-03 11:44:30,851 (com.ebridgevas.protocols.ss7.tcap.TCAPProviderImpl:481) - Registered SCCP listener with address 147
+INFO  2015-03-03 11:44:30,851 (MAPStackFactory.class:59) - MAP Stack Initialized.
+INFO  2015-03-03 11:44:30,852 (com.ebridgevas.protocols.sctp.AssociationImpl:216) - Started Association=Association [name=eBridgeUSSDGw, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=10.10.25.140, peerPort=9200, serverName=eBridgeUSSDGw, extraHostAddress=[]]
+INFO  2015-03-03 11:44:30,853 (com.ebridgevas.ss7interface.SS7Interface:83) - SS7 Interface initialized.
+INFO  2015-03-03 11:45:10,679 (com.ebridgevas.protocols.sctp.SelectorThread:275) - Connected Association [name=eBridgeUSSDGw, associationType=SERVER, ipChannelType=SCTP, hostAddress=null, hostPort=0, peerAddress=10.10.25.140, peerPort=9200, serverName=eBridgeUSSDGw, extraHostAddress=[]]
+INFO  2015-03-03 11:45:10,680 (com.ebridgevas.protocols.sctp.AssociationHandler:79) - New association setup for Association=eBridgeUSSDGw with 10 outbound streams, and 17 inbound streams.
+
+WARN  2015-03-03 11:45:10,845 (com.ebridgevas.protocols.ss7.sccp.impl.SccpStackImpl-MapLoadServerSccpStack:653) - Rx : MTP-RESUME: AffectedDpc=9
+INFO  2015-03-03 11:45:10,845 (com.ebridgevas.protocols.ss7.sccp.impl.SccpManagement-MapLoadServerSccpStack:283) - handleMtp3Resume for affectedPc : 9
+INFO  2015-03-03 11:45:55,263 (MAPMessageProcessor.class:50) - message type : processUnstructuredSSRequest_Request
+INFO  2015-03-03 11:45:55,267 (MAPMessageProcessor.class:57) - Received ProcessUnstructuredSSRequestIndication USSD String=*901#
+INFO  2015-03-03 11:45:55,273 (MAPMessageProcessor.class:138) - process()
+ERROR 2015-03-03 11:45:55,284 (com.ebridgevas.protocols.ss7.map.service.sms.MAPServiceSmsImpl:303) - Error processing ProcessUnstructuredSSRequestIndication: null
+java.lang.NullPointerException
+	at com.ebridgevas.protocols.ss7.tcap.asn.InvokeImpl.startTimer(InvokeImpl.java:370)
+	at com.ebridgevas.protocols.ss7.tcap.asn.InvokeImpl.setState(InvokeImpl.java:334)
+	at com.ebridgevas.protocols.ss7.tcap.DialogImpl.prepareComponents(DialogImpl.java:1046)
+	at com.ebridgevas.protocols.ss7.tcap.DialogImpl.send(DialogImpl.java:597)
+	at com.ebridgevas.protocols.ss7.map.MAPProviderImpl.fireTCContinue(MAPProviderImpl.java:1815)
+	at com.ebridgevas.protocols.ss7.map.MAPDialogImpl.send(MAPDialogImpl.java:343)
+	at com.ebridgevas.ss7interface.processors.ProcessUnstructuredSSRequestProcessor.process(ProcessUnstructuredSSRequestProcessor.java:57)
+	at com.ebridgevas.ss7interface.MAPServiceSupplementaryProcessor.onProcessUnstructuredSSRequest(MAPServiceSupplementaryProcessor.java:27)
+	at com.ebridgevas.protocols.ss7.map.service.supplementary.MAPServiceSupplementaryImpl.processUnstructuredSSRequest(MAPServiceSupplementaryImpl.java:301)
+	at com.ebridgevas.protocols.ss7.map.service.supplementary.MAPServiceSupplementaryImpl.processComponent(MAPServiceSupplementaryImpl.java:148)
+	at com.ebridgevas.protocols.ss7.map.MAPProviderImpl.doProcessComponent(MAPProviderImpl.java:1583)
+	at com.ebridgevas.protocols.ss7.map.MAPProviderImpl.processComponents(MAPProviderImpl.java:1453)
+	at com.ebridgevas.protocols.ss7.map.MAPProviderImpl.onTCBegin(MAPProviderImpl.java:624)
+	at com.ebridgevas.protocols.ss7.tcap.TCAPProviderImpl.deliver(TCAPProviderImpl.java:296)
+	at com.ebridgevas.protocols.ss7.tcap.DialogImpl.processBegin(DialogImpl.java:1423)
+	at com.ebridgevas.protocols.ss7.tcap.TCAPProviderImpl.onMessage(TCAPProviderImpl.java:689)
+	at com.ebridgevas.protocols.ss7.sccp.impl.SccpRoutingControl.routeMssgFromMtp(SccpRoutingControl.java:135)
+	at com.ebridgevas.protocols.ss7.sccp.impl.SccpStackImpl.onMtp3TransferMessage(SccpStackImpl.java:842)
+	at com.ebridgevas.protocols.ss7.mtp.Mtp3UserPartBaseImpl$MsgTransferDeliveryHandler.run(Mtp3UserPartBaseImpl.java:238)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+INFO  2015-03-03 11:49:14,356 (MAPMessageProcessor.class:50) - message type : processUnstructuredSSRequest_Request
+INFO  2015-03-03 11:49:14,357 (MAPMessageProcessor.class:57) - Received ProcessUnstructuredSSRequestIndication USSD String=*901#
+INFO  2015-03-03 11:49:14,357 (MAPMessageProcessor.class:138) - process()
+ERROR 2015-03-03 11:49:14,358 (com.ebridgevas.protocols.ss7.map.service.sms.MAPServiceSmsImpl:303) - Error processing ProcessUnstructuredSSRequestIndication: null
+java.lang.NullPointerException

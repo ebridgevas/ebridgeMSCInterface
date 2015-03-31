@@ -1,0 +1,100 @@
+<?xml version='1.0'?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [<!ENTITY % BOOK_ENTITIES SYSTEM "SS7_Stack_User_Guide.ent">%BOOK_ENTITIES;]>
+
+<chapter id="design_overview">
+
+	<title>Design Overview</title>
+	<important>
+		<para>
+    &THIS.PLATFORM; &THIS.APPLICATION; is subject to changes as it is under active development.
+		</para>
+	</important>
+	<para>
+  &THIS.PLATFORM; &THIS.APPLICATION; builds layers of abstraction with API, similar to NIO. Abstraction is built with three main components:
+	</para>
+  <variablelist>
+    <varlistentry>
+      <term>Selector</term>
+      <listitem>
+        <para>
+        Performs stream queries and presents the user with streams ready for I/O operations.
+        </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>SelectorKey</term>
+      <listitem>
+        <para>
+        Represents stream in selectors space.
+        </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Stream</term>
+      <listitem>
+        <para>
+        A stream of data.
+        </para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <figure>
+    <title>IO overview</title>
+    <mediaobject id="stream-design-overview1">
+      <imageobject>
+        <imagedata width="300px" align="center"
+          fileref="images/stream-design-overview1.png" format="PNG" />
+      </imageobject>
+    </mediaobject>
+  </figure>
+	<section>
+		<title>Stream protocol - Datalink</title>
+		<para>
+    Beside a simplified stream API, there is also need for SCTP (SCTP is not available in JDK6) like streaming. &THIS.PLATFORM; &THIS.APPLICATION; provides this feature over a defined stream API.
+		</para>
+		<para>
+    Datalink is a proprietary protocol designed to provide the following functions:
+		</para>
+		<itemizedlist>
+			<listitem>
+				<para>Peer to Peer Transport</para>
+			</listitem>
+			<listitem>
+				<para>Reliable Delivery - Retransmissions</para>
+			</listitem>
+			<listitem>
+				<para>Stream Status Metadata - provides the user with stream status
+					info(active,inactive, down...). Metadata is information which
+					informs peers about readiness to receive data for instance.</para>
+			</listitem>
+			<listitem>
+				<para>async I/O</para>
+			</listitem>
+		</itemizedlist>
+		<para>
+			Generally, Datalink can be imagined as follows:
+		</para>
+    <figure>
+      <title>Datalink overview</title>
+      <mediaobject id="stream-link-design-overview1">
+        <imageobject>
+          <imagedata width="300px" align="center"
+            fileref="images/stream-link-design-overview1.png" format="PNG" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+		<para>
+    Datalink follows the state machine, which reassembles one as depicted below:
+    </para>
+    <figure>
+      <title>Datalink FSM</title>
+      <mediaobject id="stream-link-design-overview2">
+        <imageobject>
+          <imagedata width="300px" align="center"
+            fileref="images/stream-link-design-overview2.png" format="PNG" />
+        </imageobject>
+      </mediaobject>
+    </figure>
+	</section>
+</chapter>
+

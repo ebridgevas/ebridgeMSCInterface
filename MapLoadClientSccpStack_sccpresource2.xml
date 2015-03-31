@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<remoteSsns>
+	<id value="0"/>
+	<value value="rsp=2 rss=8 rss-flag=0 rss-prohibited=false"/>
+</remoteSsns>
+<remoteSpcs>
+	<id value="0"/>
+	<value value="rsp=2 rsp-flag=0 mask=0 rsp-prohibited=false rsccp-prohibited=false"/>
+</remoteSpcs>
+<concernedSpcs/>

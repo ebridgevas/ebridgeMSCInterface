@@ -1,0 +1,73 @@
+
+WARN  2015-03-03 07:47:32,303
+(com.ebridgevas.protocols.ss7.sccp.impl.SccpRoutingControl:122)
+- Received SccpMessage from MTP but the SSN is not available for local routing
+    Sccp Msg [
+        Type=UDT sls=0
+        incomingOpc=9
+        incomingDpc=1216
+        outgoingDpc=-1
+        CallingAddress(
+            pc=0,
+            ssn=6,
+            AI=18,
+            gt=GT0100 {
+                tt=0,
+                np=ISDN_TELEPHONY,
+                na=INTERNATIONAL,
+                digits=263730100040}
+        )
+
+        CalledParty(
+            pc=0,
+            ssn=147,
+            AI=82,
+            gt=GT0100 {
+                tt=0,
+                np=ISDN_TELEPHONY,
+                na=INTERNATIONAL,
+                digits=263730100066
+            }
+        )
+
+        DataLen=104]
+
+
+
+WARN  2015-03-03 07: 46: 59, 443
+(com.ebridgevas.protocols.ss7.sccp.impl.SccpRoutingControl: 341)
+- Received SccpMessage for Translation but no matching Rule found for local routing
+
+SccpMessage=
+Sccp Msg [
+    Type        = UDTS sls=0
+    returnCause = SUBSYSTEM_FAILURE
+    incomingOpc = -1
+    incomingDpc = -1
+    outgoingDpc = -1
+
+    CallingAddress (
+        pc = 0,
+        ssn = 147,                          // GSM Service Control Function
+        AI = 82,
+        gt = GT0100 {
+                tt = 0,
+                np = ISDN_TELEPHONY,
+                na = INTERNATIONAL,
+                digits = 263730100066
+        }
+    )
+
+    CalledParty(
+        pc = 0,
+        ssn = 6,                            // HLR
+        AI = 18,
+        gt = GT0100 {
+                tt = 0,
+                np = ISDN_TELEPHONY,
+                na = INTERNATIONAL,
+                digits = 263730100040
+        }
+    )
+
+    DataLen=104

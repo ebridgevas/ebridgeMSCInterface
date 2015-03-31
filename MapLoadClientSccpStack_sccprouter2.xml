@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rule/>
+<routingAddress/>
+<longMessageRule/>
+<sap>
+	<id value="1"/>
+	<value value="mtp3Id=1, opc=0, ni=0, dpcList=[[key=1, firstDpc=2, lastDpc=2, firstSls=0, lastSls=255, slsMask=255], ]"/>
+</sap>
